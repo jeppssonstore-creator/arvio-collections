@@ -1,7 +1,7 @@
 [
   {
     "id": "services",
-    "title": "Services",
+    "title": "Tjänster",
     "folders": [
       {
         "id": "netflix-movies",
@@ -14,7 +14,8 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "8"
+              "withWatchProviders": "8",
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
@@ -30,7 +31,8 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "8"
+              "withWatchProviders": "8",
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
@@ -46,7 +48,8 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "337"
+              "withWatchProviders": "337",
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
@@ -62,7 +65,8 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "337"
+              "withWatchProviders": "337",
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
@@ -78,7 +82,8 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "119"
+              "withWatchProviders": "119",
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
@@ -94,7 +99,8 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "119"
+              "withWatchProviders": "119",
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
@@ -110,7 +116,8 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "1899"
+              "withWatchProviders": "1899",
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
@@ -126,7 +133,8 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "1899"
+              "withWatchProviders": "1899",
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
