@@ -1,144 +1,72 @@
 [
   {
     "id": "services",
-    "title": "Tjänster",
+    "title": "Tjänster & Samlingar",
     "folders": [
       {
-        "id": "netflix-movies",
-        "title": "Netflix - Action & Äventyr",
-        "description": "Actionfilmer",
+        "id": "trending-movies",
+        "title": "Trendande Filmer",
+        "description": "Filmer som trendar just nu.",
         "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
             "mediaType": "MOVIE",
             "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "8",
-              "withGenres": "28",
-              "voteCountGte": 50
+            "filters": { 
+              "voteCountGte": 100,
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
       },
       {
-        "id": "netflix-shows",
-        "title": "Netflix - Serier",
-        "description": "Populära serier",
+        "id": "trending-shows",
+        "title": "Trendande Serier",
+        "description": "Serier som trendar just nu.",
         "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
             "mediaType": "TV",
             "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "8",
-              "voteCountGte": 20
+            "filters": { 
+              "voteCountGte": 50,
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
       },
       {
-        "id": "disney-movies",
-        "title": "Disney+ - Familj & Animerat",
-        "description": "Familjefilmer",
+        "id": "top-rated-movies",
+        "title": "Topplistan Filmer",
+        "description": "Mest omtyckta filmerna genom tiderna.",
         "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
             "mediaType": "MOVIE",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "337",
-              "withGenres": "16",
-              "voteCountGte": 50
+            "sortBy": "vote_average.desc",
+            "filters": { 
+              "voteCountGte": 500,
+              "releaseDateLte": "2026-10-17"
             }
           }
         ]
       },
       {
-        "id": "disney-shows",
-        "title": "Disney+ - Serier",
-        "description": "Serier",
+        "id": "top-rated-shows",
+        "title": "Topplistan Serier",
+        "description": "Mest omtyckta serierna genom tiderna.",
         "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
             "mediaType": "TV",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "337",
-              "voteCountGte": 20
-            }
-          }
-        ]
-      },
-      {
-        "id": "prime-movies",
-        "title": "Prime Video - Thriller & Drama",
-        "description": "Drama och thrillers",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "MOVIE",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "9",
-              "withGenres": "18,53",
-              "voteCountGte": 50
-            }
-          }
-        ]
-      },
-      {
-        "id": "prime-shows",
-        "title": "Prime Video - Serier",
-        "description": "Serier",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "TV",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "9",
-              "voteCountGte": 20
-            }
-          }
-        ]
-      },
-      {
-        "id": "hbo-movies",
-        "title": "HBO Max - Sci-Fi & Fantasy",
-        "description": "Sci-fi filmer",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "MOVIE",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "384",
-              "withGenres": "878",
-              "voteCountGte": 50
-            }
-          }
-        ]
-      },
-      {
-        "id": "hbo-shows",
-        "title": "HBO Max - Serier",
-        "description": "Serier",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "TV",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withWatchProviders": "384",
-              "voteCountGte": 20
+            "sortBy": "vote_average.desc",
+            "filters": { 
+              "voteCountGte": 200,
+              "firstAirDateLte": "2026-10-17"
             }
           }
         ]
