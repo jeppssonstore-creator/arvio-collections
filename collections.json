@@ -4,9 +4,189 @@
     "title": "Tjänster & Samlingar",
     "folders": [
       {
+        "id": "egyptian-movies",
+        "title": "Egyptiska Filmer",
+        "description": "Populära egyptiska filmer",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginCountry": "EG",
+              "voteCountGte": 1,
+              "releaseDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "egyptian-shows",
+        "title": "Egyptiska Serier",
+        "description": "Populära egyptiska serier",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginCountry": "EG",
+              "voteCountGte": 1,
+              "firstAirDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "netflix-movies",
+        "title": "Netflix - Filmer",
+        "description": "Populära filmer på Netflix",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "8",
+              "voteCountGte": 50,
+              "releaseDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "netflix-shows",
+        "title": "Netflix - Serier",
+        "description": "Populära serier på Netflix",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "8",
+              "voteCountGte": 20,
+              "firstAirDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "disney-movies",
+        "title": "Disney+ - Filmer",
+        "description": "Populära filmer på Disney+",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "337",
+              "voteCountGte": 50,
+              "releaseDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "disney-shows",
+        "title": "Disney+ - Serier",
+        "description": "Populära serier på Disney+",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "337",
+              "voteCountGte": 20,
+              "firstAirDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prime-movies",
+        "title": "Prime Video - Filmer",
+        "description": "Populära filmer på Prime Video",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "9",
+              "voteCountGte": 50,
+              "releaseDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prime-shows",
+        "title": "Prime Video - Serier",
+        "description": "Populära serier på Prime Video",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "9",
+              "voteCountGte": 20,
+              "firstAirDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hbo-movies",
+        "title": "HBO Max - Filmer",
+        "description": "Populära filmer på HBO Max",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "384",
+              "voteCountGte": 50,
+              "releaseDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hbo-shows",
+        "title": "HBO Max - Serier",
+        "description": "Populära serier på HBO Max",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "384",
+              "voteCountGte": 20,
+              "firstAirDateLte": "2026-10-17"
+            }
+          }
+        ]
+      },
+      {
         "id": "trending-movies",
         "title": "Trendande Filmer",
-        "description": "De mest populära filmerna just nu.",
+        "description": "Filmer som trendar just nu",
         "sources": [
           {
             "provider": "tmdb",
@@ -23,7 +203,7 @@
       {
         "id": "trending-shows",
         "title": "Trendande Serier",
-        "description": "De mest populära serierna just nu.",
+        "description": "Serier som trendar just nu",
         "sources": [
           {
             "provider": "tmdb",
@@ -32,40 +212,6 @@
             "sortBy": "popularity.desc",
             "filters": { 
               "voteCountGte": 50,
-              "firstAirDateLte": "2026-10-17"
-            }
-          }
-        ]
-      },
-      {
-        "id": "top-rated-movies",
-        "title": "Topplistan Filmer",
-        "description": "Mest omtyckta filmerna genom tiderna.",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "MOVIE",
-            "sortBy": "vote_average.desc",
-            "filters": { 
-              "voteCountGte": 500,
-              "releaseDateLte": "2026-10-17"
-            }
-          }
-        ]
-      },
-      {
-        "id": "top-rated-shows",
-        "title": "Topplistan Serier",
-        "description": "Mest omtyckta serierna genom tiderna.",
-        "sources": [
-          {
-            "provider": "tmdb",
-            "tmdbSourceType": "DISCOVER",
-            "mediaType": "TV",
-            "sortBy": "vote_average.desc",
-            "filters": { 
-              "voteCountGte": 200,
               "firstAirDateLte": "2026-10-17"
             }
           }
