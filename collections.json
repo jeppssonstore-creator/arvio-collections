@@ -4,9 +4,9 @@
     "title": "Tjänster",
     "folders": [
       {
-        "id": "trending-movies",
-        "title": "Populära Filmer",
-        "description": "De mest populära filmerna just nu",
+        "id": "netflix-all",
+        "title": "Netflix",
+        "description": "Nyaste filmerna och serierna på Netflix",
         "sources": [
           {
             "provider": "tmdb",
@@ -14,23 +14,99 @@
             "mediaType": "MOVIE",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50
+              "withWatchProviders": "8",
+              "voteCountGte": 10
             }
-          }
-        ]
-      },
-      {
-        "id": "trending-shows",
-        "title": "Populära Serier",
-        "description": "De mest populära serierna just nu",
-        "sources": [
+          },
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
             "mediaType": "TV",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 20
+              "withWatchProviders": "8",
+              "voteCountGte": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "disney-all",
+        "title": "Disney+",
+        "description": "Nyaste filmerna och serierna på Disney+",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "337",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "337",
+              "voteCountGte": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "prime-all",
+        "title": "Prime Video",
+        "description": "Nyaste filmerna och serierna på Amazon Prime",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "9",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "9",
+              "voteCountGte": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "hbo-all",
+        "title": "HBO Max / Max",
+        "description": "Nyaste filmerna och serierna på HBO Max / Max",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "384",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "384",
+              "voteCountGte": 5
             }
           }
         ]
