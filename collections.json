@@ -1,0 +1,136 @@
+[
+  {
+    "id": "services",
+    "title": "Services",
+    "folders": [
+      {
+        "id": "netflix-movies",
+        "title": "Netflix - Filmer",
+        "description": "Nyaste Netflix-filmerna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "8"
+            }
+          }
+        ]
+      },
+      {
+        "id": "netflix-shows",
+        "title": "Netflix - Serier",
+        "description": "Nyaste Netflix-serierna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "8"
+            }
+          }
+        ]
+      },
+      {
+        "id": "disney-movies",
+        "title": "Disney+ - Filmer",
+        "description": "Nyaste Disney+-filmerna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "337"
+            }
+          }
+        ]
+      },
+      {
+        "id": "disney-shows",
+        "title": "Disney+ - Serier",
+        "description": "Nyaste Disney+-serierna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "337"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prime-movies",
+        "title": "Prime Video - Filmer",
+        "description": "Nyaste Amazon Prime-filmerna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "119"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prime-shows",
+        "title": "Prime Video - Serier",
+        "description": "Nyaste Amazon Prime-serierna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "119"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hbo-movies",
+        "title": "HBO Max - Filmer",
+        "description": "Nyaste HBO Max-filmerna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "1899"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hbo-shows",
+        "title": "HBO Max - Serier",
+        "description": "Nyaste HBO Max-serierna",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "1899"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
