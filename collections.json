@@ -5,8 +5,8 @@
     "folders": [
       {
         "id": "netflix-movies",
-        "title": "Netflix - Filmer",
-        "description": "Populära filmer på Netflix",
+        "title": "Netflix - Action & Äventyr",
+        "description": "Actionfilmer",
         "sources": [
           {
             "provider": "tmdb",
@@ -15,6 +15,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "8",
+              "withGenres": "28",
               "voteCountGte": 50
             }
           }
@@ -23,7 +24,7 @@
       {
         "id": "netflix-shows",
         "title": "Netflix - Serier",
-        "description": "Populära serier på Netflix",
+        "description": "Populära serier",
         "sources": [
           {
             "provider": "tmdb",
@@ -39,8 +40,8 @@
       },
       {
         "id": "disney-movies",
-        "title": "Disney+ - Filmer",
-        "description": "Populära filmer på Disney+",
+        "title": "Disney+ - Familj & Animerat",
+        "description": "Familjefilmer",
         "sources": [
           {
             "provider": "tmdb",
@@ -49,6 +50,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "337",
+              "withGenres": "16",
               "voteCountGte": 50
             }
           }
@@ -57,7 +59,7 @@
       {
         "id": "disney-shows",
         "title": "Disney+ - Serier",
-        "description": "Populära serier på Disney+",
+        "description": "Serier",
         "sources": [
           {
             "provider": "tmdb",
@@ -73,8 +75,8 @@
       },
       {
         "id": "prime-movies",
-        "title": "Prime Video - Filmer",
-        "description": "Populära filmer på Prime Video",
+        "title": "Prime Video - Thriller & Drama",
+        "description": "Drama och thrillers",
         "sources": [
           {
             "provider": "tmdb",
@@ -83,6 +85,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "9",
+              "withGenres": "18,53",
               "voteCountGte": 50
             }
           }
@@ -91,7 +94,7 @@
       {
         "id": "prime-shows",
         "title": "Prime Video - Serier",
-        "description": "Populära serier på Prime Video",
+        "description": "Serier",
         "sources": [
           {
             "provider": "tmdb",
@@ -107,8 +110,8 @@
       },
       {
         "id": "hbo-movies",
-        "title": "HBO Max - Filmer",
-        "description": "Populära filmer på HBO Max / Max",
+        "title": "HBO Max - Sci-Fi & Fantasy",
+        "description": "Sci-fi filmer",
         "sources": [
           {
             "provider": "tmdb",
@@ -117,6 +120,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "384",
+              "withGenres": "878",
               "voteCountGte": 50
             }
           }
@@ -125,7 +129,7 @@
       {
         "id": "hbo-shows",
         "title": "HBO Max - Serier",
-        "description": "Populära serier på HBO Max / Max",
+        "description": "Serier",
         "sources": [
           {
             "provider": "tmdb",
