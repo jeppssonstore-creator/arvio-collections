@@ -4,9 +4,9 @@
     "title": "Tjänster",
     "folders": [
       {
-        "id": "netflix-movies",
-        "title": "Netflix - Filmer",
-        "description": "Nyaste Netflix-filmerna",
+        "id": "netflix-all",
+        "title": "Netflix",
+        "description": "Nyaste filmerna och serierna på Netflix",
         "sources": [
           {
             "provider": "tmdb",
@@ -17,14 +17,7 @@
               "withWatchProviders": "8",
               "releaseDateLte": "2026-10-17"
             }
-          }
-        ]
-      },
-      {
-        "id": "netflix-shows",
-        "title": "Netflix - Serier",
-        "description": "Nyaste Netflix-serierna",
-        "sources": [
+          },
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -38,9 +31,9 @@
         ]
       },
       {
-        "id": "disney-movies",
-        "title": "Disney+ - Filmer",
-        "description": "Nyaste Disney+-filmerna",
+        "id": "disney-all",
+        "title": "Disney+",
+        "description": "Nyaste filmerna och serierna på Disney+",
         "sources": [
           {
             "provider": "tmdb",
@@ -51,14 +44,7 @@
               "withWatchProviders": "337",
               "releaseDateLte": "2026-10-17"
             }
-          }
-        ]
-      },
-      {
-        "id": "disney-shows",
-        "title": "Disney+ - Serier",
-        "description": "Nyaste Disney+-serierna",
-        "sources": [
+          },
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -72,9 +58,9 @@
         ]
       },
       {
-        "id": "prime-movies",
-        "title": "Prime Video - Filmer",
-        "description": "Nyaste Amazon Prime-filmerna",
+        "id": "prime-all",
+        "title": "Prime Video",
+        "description": "Nyaste filmerna och serierna på Amazon Prime",
         "sources": [
           {
             "provider": "tmdb",
@@ -85,14 +71,7 @@
               "withWatchProviders": "119",
               "releaseDateLte": "2026-10-17"
             }
-          }
-        ]
-      },
-      {
-        "id": "prime-shows",
-        "title": "Prime Video - Serier",
-        "description": "Nyaste Amazon Prime-serierna",
-        "sources": [
+          },
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -106,9 +85,9 @@
         ]
       },
       {
-        "id": "hbo-movies",
-        "title": "HBO Max - Filmer",
-        "description": "Nyaste HBO Max-filmerna",
+        "id": "hbo-all",
+        "title": "HBO Max",
+        "description": "Nyaste filmerna och serierna på HBO Max",
         "sources": [
           {
             "provider": "tmdb",
@@ -119,14 +98,7 @@
               "withWatchProviders": "1899",
               "releaseDateLte": "2026-10-17"
             }
-          }
-        ]
-      },
-      {
-        "id": "hbo-shows",
-        "title": "HBO Max - Serier",
-        "description": "Nyaste HBO Max-serierna",
-        "sources": [
+          },
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
