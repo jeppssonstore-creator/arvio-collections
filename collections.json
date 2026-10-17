@@ -4,9 +4,9 @@
     "title": "Tjänster",
     "folders": [
       {
-        "id": "netflix-all",
-        "title": "Netflix",
-        "description": "Nyaste filmerna och serierna på Netflix",
+        "id": "netflix-movies",
+        "title": "Netflix - Filmer",
+        "description": "Populära filmer på Netflix",
         "sources": [
           {
             "provider": "tmdb",
@@ -15,9 +15,16 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "8",
-              "voteCountGte": 10
+              "voteCountGte": 50
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "netflix-shows",
+        "title": "Netflix - Serier",
+        "description": "Populära serier på Netflix",
+        "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -25,15 +32,15 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "8",
-              "voteCountGte": 5
+              "voteCountGte": 20
             }
           }
         ]
       },
       {
-        "id": "disney-all",
-        "title": "Disney+",
-        "description": "Nyaste filmerna och serierna på Disney+",
+        "id": "disney-movies",
+        "title": "Disney+ - Filmer",
+        "description": "Populära filmer på Disney+",
         "sources": [
           {
             "provider": "tmdb",
@@ -42,9 +49,16 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "337",
-              "voteCountGte": 10
+              "voteCountGte": 50
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "disney-shows",
+        "title": "Disney+ - Serier",
+        "description": "Populära serier på Disney+",
+        "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -52,15 +66,15 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "337",
-              "voteCountGte": 5
+              "voteCountGte": 20
             }
           }
         ]
       },
       {
-        "id": "prime-all",
-        "title": "Prime Video",
-        "description": "Nyaste filmerna och serierna på Amazon Prime",
+        "id": "prime-movies",
+        "title": "Prime Video - Filmer",
+        "description": "Populära filmer på Prime Video",
         "sources": [
           {
             "provider": "tmdb",
@@ -69,9 +83,16 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "9",
-              "voteCountGte": 10
+              "voteCountGte": 50
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "prime-shows",
+        "title": "Prime Video - Serier",
+        "description": "Populära serier på Prime Video",
+        "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -79,15 +100,15 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "9",
-              "voteCountGte": 5
+              "voteCountGte": 20
             }
           }
         ]
       },
       {
-        "id": "hbo-all",
-        "title": "HBO Max / Max",
-        "description": "Nyaste filmerna och serierna på HBO Max / Max",
+        "id": "hbo-movies",
+        "title": "HBO Max - Filmer",
+        "description": "Populära filmer på HBO Max / Max",
         "sources": [
           {
             "provider": "tmdb",
@@ -96,9 +117,16 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "384",
-              "voteCountGte": 10
+              "voteCountGte": 50
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "hbo-shows",
+        "title": "HBO Max - Serier",
+        "description": "Populära serier på HBO Max / Max",
+        "sources": [
           {
             "provider": "tmdb",
             "tmdbSourceType": "DISCOVER",
@@ -106,7 +134,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withWatchProviders": "384",
-              "voteCountGte": 5
+              "voteCountGte": 20
             }
           }
         ]
