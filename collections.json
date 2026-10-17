@@ -6,8 +6,7 @@
       {
         "id": "trending-movies",
         "title": "Trendande Filmer",
-        "description": "Filmer som trendar just nu.",
-        "image": "https://image.tmdb.org/t/p/w780/393939393.jpg",
+        "description": "De mest populära filmerna just nu.",
         "sources": [
           {
             "provider": "tmdb",
@@ -24,8 +23,7 @@
       {
         "id": "trending-shows",
         "title": "Trendande Serier",
-        "description": "Serier som trendar just nu.",
-        "image": "https://image.tmdb.org/t/p/w780/uD24eA3o8M8fM83.jpg",
+        "description": "De mest populära serierna just nu.",
         "sources": [
           {
             "provider": "tmdb",
@@ -43,7 +41,6 @@
         "id": "top-rated-movies",
         "title": "Topplistan Filmer",
         "description": "Mest omtyckta filmerna genom tiderna.",
-        "image": "https://image.tmdb.org/t/p/w780/rSPw7tiP231pP.jpg",
         "sources": [
           {
             "provider": "tmdb",
@@ -61,7 +58,6 @@
         "id": "top-rated-shows",
         "title": "Topplistan Serier",
         "description": "Mest omtyckta serierna genom tiderna.",
-        "image": "https://image.tmdb.org/t/p/w780/gg46663636.jpg",
         "sources": [
           {
             "provider": "tmdb",
