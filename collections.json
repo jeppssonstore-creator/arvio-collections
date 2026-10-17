@@ -68,7 +68,7 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "119",
+              "withWatchProviders": "9",
               "releaseDateLte": "2026-10-17"
             }
           },
@@ -78,7 +78,7 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "119",
+              "withWatchProviders": "9",
               "firstAirDateLte": "2026-10-17"
             }
           }
@@ -86,8 +86,8 @@
       },
       {
         "id": "hbo-all",
-        "title": "HBO Max",
-        "description": "Nyaste filmerna och serierna på HBO Max",
+        "title": "HBO Max / Max",
+        "description": "Nyaste filmerna och serierna på HBO Max / Max",
         "sources": [
           {
             "provider": "tmdb",
@@ -95,7 +95,7 @@
             "mediaType": "MOVIE",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withWatchProviders": "1899",
+              "withWatchProviders": "384",
               "releaseDateLte": "2026-10-17"
             }
           },
@@ -105,7 +105,7 @@
             "mediaType": "TV",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "1899",
+              "withWatchProviders": "384",
               "firstAirDateLte": "2026-10-17"
             }
           }
